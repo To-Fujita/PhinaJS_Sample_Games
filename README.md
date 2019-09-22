@@ -6,7 +6,7 @@ Phina.JS is one of Game Engine based on JavaScript. I had tried to create some g
 
 ### Step-1
 
-[index_Phina_01.html](https://github.com/To-Fujita/PhinaJS_Sample_Games/index_Phina_01.html) : Demo for Step-1
+[index_Phina_01.html](https://github.com/To-Fujita/PhinaJS_Sample_Games/blob/master/index_Phina_01.html) : Demo for Step-1
 ### Step-2
 
 [index_Phina_02.html](https://github.com/To-Fujita/PhinaJS_Sample_Games/index_Phina_02.html) : Demo for Step-2
