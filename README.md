@@ -13,6 +13,7 @@ The files are as follows:
 - js/phina_sample_01.js - phina_sample_09.js: Each JavaScript file is corresponding to each HTML file.  
 - js/stage_01.js: Each stage without enemy is here. It is available to change by using text editor.  
 - js/stage_02.js: Each stage with enemy (after stage #7) is here. It is also available to change.  
+
 In these games, some walking graphics are downloaded from  [pikasgame](https://dorapika.wixsite.com/pikasgame) and [pipoya](http://blog.pipoya.net/).  
 [index.html](https://to-fujita.github.io/PhinaJS_Sample_Games/index.html) : Menu for Demo Games
 ### Step-1
