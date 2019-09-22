@@ -6,6 +6,22 @@ Phina.JS is one of Game Engine based on JavaScript. I had tried to create some g
 
 ### Step-1
 
+### Step-2
+
+### Step-3
+
+### Step-4
+
+### Step-5
+
+### Step-6
+
+### Step-7
+
+### Step-8
+
+### Step-9
+
 ## Reference:
 1. [Phina js](https://phinajs.com/) : Home Page of Phina.js
 2. [pikasgame](https://dorapika.wixsite.com/pikasgame) : Home Page of PIKA's GAME
