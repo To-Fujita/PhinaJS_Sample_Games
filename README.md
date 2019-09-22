@@ -4,7 +4,7 @@ Phina.JS is one of Game Engine based on JavaScript. I had tried to create some g
 This is one of tutrial for creating some games based on phina.js. In this document, to try creating 2D based breakout games with pazzle and maze. 
 ## Demo:
 I will show you same samples to create 2D based games of pazzle type step by step.  
-These demonstrations are confirmed by Microsoft Edge (Ver. 11.0.17763.379), Firefox (Ver. 65.0.2/64 bit) and Google Chrome (Ver. 73.0.3683.86/64 bit) under the condition of Windows 10.
+These demonstrations are confirmed by Microsoft Edge (Ver. 11.0.17763.379), Firefox (Ver. 65.0.2/64 bit) and Google Chrome (Ver. 73.0.3683.86/64 bit) under the condition of Windows 10.  
 [index.html](https://to-fujita.github.io/PhinaJS_Sample_Games/index.html) : Menu for Demo Games  
 The files are as follows:  
 - index_Phina_01.html - index_Phina_09.html: Each html file is corresponding to each step below.  
