@@ -25,7 +25,7 @@ At the Step-6, to set pushing a box. It is finished the basic 2D based game samp
 [index_Phina_06.html](https://to-fujita.github.io/PhinaJS_Sample_Games/index_Phina_06.html) : Demo for Step-6
 ### Step-7
 In this step, try to create game for 2D type of maze with small chang of the sample in Step-6. The algorithm for making maze is based on [Algoful](http://algoful.com/Archive/Algorithm/MazeDig).  
-[index_Phina_07.html](https://github.com/To-Fujita/PhinaJS_Sample_Games/blob/master/index_Phina_07.html) : Demo for Step-7
+[index_Phina_07.html](https://to-fujita.github.io/PhinaJS_Sample_Games/index_Phina_07.html) : Demo for Step-7
 ### Step-8
 At the Step-8, added some enemies to the sample in Step-6.  
 [index_Phina_08.html](https://to-fujita.github.io/PhinaJS_Sample_Games/index_Phina_08.html) : Demo for Step-8
