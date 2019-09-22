@@ -7,7 +7,7 @@ Phina.JS is one of Game Engine based on JavaScript. I had tried to create some g
 ### Step-1
 
 ## Reference:
-1. [Phina js](https://phinajs.com/) Home Page of Phina.js
+1. [Phina js](https://phinajs.com/) : Home Page of Phina.js
 2. [Dorapica](https://dorapika.wixsite.com/pikasgame)
 3. [pipoya](http://blog.pipoya.net/)
 ## Licence:
