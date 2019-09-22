@@ -5,14 +5,14 @@ This is one of tutrial for creating some games based on phina.js. In this docume
 ## Demo:
 I will show you same samples to create 2D based games of pazzle type step by step.  
 The files are as follows:  
-index_Phina_01.html - index_Phina_09.html: Each html file is corresponding to each step below.  
-images: It is a folder for providing the background image, tile images and character's graphics.  
-js: It is a folder for main programs.  
-js/maze_02.js: To create the maze for Step-7.  
-js/phina.js, phina.min.js: The main body for phina.js.  
-js/phina_sample_01.js - phina_sample_09.js: Each JavaScript file is corresponding to each HTML file.  
-js/stage_01.js: Each stage without enemy is here. It is available to change by using text editor.  
-js/stage_02.js: Each stage with enemy (after stage #7) is here. It is also available to change.
+- index_Phina_01.html - index_Phina_09.html: Each html file is corresponding to each step below.  
+- images: It is a folder for providing the background image, tile images and character's graphics.  
+- js: It is a folder for main programs.  
+- js/maze_02.js: To create the maze for Step-7.  
+- js/phina.js, phina.min.js: The main body for phina.js.  
+- js/phina_sample_01.js - phina_sample_09.js: Each JavaScript file is corresponding to each HTML file.  
+- js/stage_01.js: Each stage without enemy is here. It is available to change by using text editor.  
+- js/stage_02.js: Each stage with enemy (after stage #7) is here. It is also available to change.
 In these games, some walking graphics are downloaded from  [pikasgame](https://dorapika.wixsite.com/pikasgame) and [pipoya](http://blog.pipoya.net/).  
 [index.html](https://to-fujita.github.io/PhinaJS_Sample_Games/index.html) : Menu for Demo Games
 ### Step-1
