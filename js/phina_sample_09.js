@@ -1,5 +1,5 @@
 ﻿/*
- * phina.js sample #009 by T. Fujita on 2019/9/19
+ * phina.js sample #009 by T. Fujita on 2019/9/24
  * Enemy remove version
  */
 
@@ -38,8 +38,9 @@ var ROOM = room[0];
 
 var ASSETS = {
   image: {
-    'Player': './images/ETNR_TOMITA_01.png',
     'bg': './images/bg.jpg',
+    'Player': './images/ETNR_TOMITA_01.png',
+    'again': './images/A_48.png',
     'block': './images/Box_06.png',
     'enemy': './images/Gost_01.png',
     'goal': './images/Goal_00.png',
@@ -63,12 +64,14 @@ phina.define('TitleScene',{
     if((END_flag != "Game Over !") && (counter >= max_rooms)) {
 	counter = 0;
 	var score_03 = 'Return to Room No. ' + counter + '\n\n by T. Fujita';
-    } else {
-	var score_03 = 'Next Room is No. ' + counter + '\n\n by T. Fujita';
-    }
-    if(END_flag == "Game Over !") {
+    } else if(END_flag == "Game Over !" || END_flag == "Again !") {
 	counter = counter - 1;
 	var score_03 = 'Again the Room No. ' + counter + '\n\n by T. Fujita';
+    } else {
+	if(counter >= max_rooms) {
+	    counter = 0;
+	}
+	var score_03 = 'Next Room is No. ' + counter + '\n\n by T. Fujita';
     }
 
     Label({
@@ -88,7 +91,7 @@ phina.define('TitleScene',{
     }).addChildTo(this).setPosition(SCREEN_X/2, 350);
 
     Label({
-      text: "TOUCH NEXT",
+      text: "TOUCH CONTINUE !",
       fontSize: 42,
       fill: 'crimson'
     }).addChildTo(this)
@@ -111,9 +114,11 @@ phina.define('MainScene', {
     this.bg.width = SCREEN_X;
     this.bg.height = SCREEN_Y;
 //    this.backgroundColor = '#ffaaaa';
+    END_flag = " ";
 
     ROOM = room[counter];
     if(counter >= max_rooms) {
+	counter = 0;
 	this.exit();
     }
     counter = counter + 1;
@@ -129,6 +134,10 @@ phina.define('MainScene', {
 	    if(ROOM[i].substr(j,1) == "P") { 
 		var ii = i;
 		var jj = j;
+	    }
+	    else if(ROOM[i].substr(j,1) == "A") { 
+		this.again = Again().addChildTo(this).setScale(scale);
+		this.again.setPosition( j * P_size + P_size/2, i * P_size + P_size/2); 
 	    }
 	    else if(ROOM[i].substr(j,1) == "G") { 
 		var goal = Goal().addChildTo(this).setOrigin(0.0, 0.0).setScale(scale);
@@ -173,7 +182,7 @@ phina.define('MainScene', {
 	pos[i] = [];
 	for (j=0; j<temp.length; j++) {
 		pos[i][j] = temp[j][i];
-if(pos[i][j] == "E") {pos[i][j] = "F";}
+		if(pos[i][j] == "E") {pos[i][j] = "F";}
 	}
     }
   },
@@ -183,6 +192,7 @@ if(pos[i][j] == "E") {pos[i][j] = "F";}
     var touch_p = app.pointer;
     var anim_p = FrameAnimation('Player_ss').attachTo(this.player);
     var player = this.player;
+    var again = this.again;
     var BL_temp = 0;
     var p_x = Math.floor(player.x / P_size);
     var p_y = Math.floor(player.y / P_size);
@@ -194,6 +204,14 @@ if(pos[i][j] == "E") {pos[i][j] = "F";}
     if (p_y < 0) { p_y = 0; }
     if(pos[px][py] == "G") {
 	END_flag = "Goal !";
+	this.nextLabel ="title";
+	this.exit();
+    }
+    again.setInteractive(true);
+    again.onpointstart = function () {
+	END_flag = "Again !";
+    }
+    if(END_flag == "Again !") {
 	this.nextLabel ="title";
 	this.exit();
     }
@@ -499,6 +517,14 @@ if(pos[i][j] == "E") {pos[i][j] = "F";}
   }
 });
 
+
+phina.define('Again', {
+  superClass: 'Sprite',
+
+  init: function(index) {
+    this.superInit('again');
+  },
+});
 
 phina.define('Goal', {
   superClass: 'Sprite',

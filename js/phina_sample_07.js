@@ -70,7 +70,7 @@ phina.define('TitleScene',{
     }).addChildTo(this).setPosition(SCREEN_X/2, 350);
 
     Label({
-      text: "TOUCH NEXT",
+      text: "TOUCH NEXT !",
       fontSize: 42,
       fill: 'crimson'
     }).addChildTo(this)

@@ -1,5 +1,5 @@
 ﻿/*
- * phina.js sample #005 by T. Fujita on 2019/9/13
+ * phina.js sample #005 by T. Fujita on 2019/9/24
  */
 
 phina.globalize();
@@ -16,6 +16,7 @@ var BL_counter = 0;
 var score = " ";
 var scoreLabel;
 var flag = "stay";
+var END_flag;
 var pos = [];
 var temp = [];
 var BLOCK = [];
@@ -24,8 +25,9 @@ var ROOM = room[0];
 
 var ASSETS = {
   image: {
-    'Player': './images/ETNR_TOMITA_01.png',
     'bg': './images/bg.jpg',
+    'Player': './images/ETNR_TOMITA_01.png',
+    'again': './images/A_48.png',
     'block': './images/Box_06.png',
     'goal': './images/Goal_00.png',
     'wall_0': './images/Block_05.png',
@@ -43,14 +45,21 @@ phina.define('TitleScene',{
     this.bg.origin.set(0, 0);
     this.bg.width = SCREEN_X;
     this.bg.height = SCREEN_Y;
-    var score_01 = 'Goal !';
     var score_02 = 'ここで使用しているキャラクターの一部に「どらぴか」様\n URL: https://dorapika.wixsite.com/pikasgame \n作成の素材を使用しております。';
-    if(counter >= max_rooms) {
+    if(END_flag == "Again") {
+	counter = counter - 1;
+        var score_01 = 'Again !';
+	var score_03 = 'Again the Room No. ' + counter + '\n\n by T. Fujita';
+    } else if(END_flag == 'Goal !' && counter >= max_rooms) {
 	counter = 0;
-	var score_03 = 'Return to Room No. ' + counter + '\n\n by T. Fujita';
+        var score_01 = 'Goal !';
+	var score_03 = 'Return to the Room No. ' + counter + '\n\n by T. Fujita';
     } else {
+	if(counter >= max_rooms) {
+	    counter = 0;
+	}
+        var score_01 = 'Goal !';
 	var score_03 = 'Next Room is No. ' + counter + '\n\n by T. Fujita';
-
     }
 
     Label({
@@ -70,7 +79,7 @@ phina.define('TitleScene',{
     }).addChildTo(this).setPosition(SCREEN_X/2, 350);
 
     Label({
-      text: "TOUCH NEXT",
+      text: "TOUCH CONTINUE !",
       fontSize: 42,
       fill: 'crimson'
     }).addChildTo(this)
@@ -93,17 +102,17 @@ phina.define('MainScene', {
     this.bg.width = SCREEN_X;
     this.bg.height = SCREEN_Y;
 //    this.backgroundColor = '#ffaaaa';
+    END_flag = " ";
 
-    ROOM = room[counter];
     if(counter >= max_rooms) {
+	counter = 0;
 	this.exit();
     }
+    ROOM = room[counter];
     counter = counter + 1;
 
     this.player = Sprite('Player', 48, 48).addChildTo(this).setScale(scale);
     this.player.frameIndex = 0;
-    this.goal = Goal().addChildTo(this).setScale(scale);
-    this.block = Block().addChildTo(this).setScale(scale);
     this.wall_0Group = DisplayElement().addChildTo(this);
     this.wall_1Group = DisplayElement().addChildTo(this);
 
@@ -113,6 +122,10 @@ phina.define('MainScene', {
 	    temp[i][j] = ROOM[i].substr(j,1);
 	    if(ROOM[i].substr(j,1) == "P") { 
 		this.player.setPosition( j * P_size + P_size/2, i * P_size + P_size/2); 
+	    }
+	    else if(ROOM[i].substr(j,1) == "A") { 
+		this.again = Again().addChildTo(this).setScale(scale);
+		this.again.setPosition( j * P_size + P_size/2, i * P_size + P_size/2); 
 	    }
 	    else if(ROOM[i].substr(j,1) == "G") { 
 		var goal = Goal().addChildTo(this).setScale(scale);
@@ -146,6 +159,7 @@ phina.define('MainScene', {
     var touch_p = app.pointer;
     var anim_p = FrameAnimation('Player_ss').attachTo(this.player);
     var player = this.player;
+    var again = this.again;
     var BL_temp = 0;
     var p_x = Math.floor(player.x / P_size);
     var p_y = Math.floor(player.y / P_size);
@@ -156,6 +170,15 @@ phina.define('MainScene', {
     if (p_x < 0) { p_x = 0; }
     if (p_y < 0) { p_y = 0; }
     if(pos[p_x][p_y] == "G") {
+	END_falg = "Goal !";
+	this.nextLabel ="title";
+	this.exit();
+    }
+    again.setInteractive(true);
+    again.onpointstart = function () {
+	END_flag = "Again";
+    }
+    if(END_flag == "Again") {
 	this.nextLabel ="title";
 	this.exit();
     }
@@ -232,6 +255,14 @@ phina.define('MainScene', {
   }
 });
 
+
+phina.define('Again', {
+  superClass: 'Sprite',
+
+  init: function(index) {
+    this.superInit('again');
+  },
+});
 
 phina.define('Goal', {
   superClass: 'Sprite',

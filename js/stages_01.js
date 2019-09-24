@@ -1,6 +1,7 @@
 // All the rooms are here. 
 // by T. Fujita
 // 
+// A: Again
 // B: Block(Movable)
 // F: Floor
 // G: Goal
@@ -13,14 +14,14 @@ var room = [];
 		"WFFFFFFW",
 		"WFPFFFFW",
 		"WFFFFFFW",
-		"WwwwwwwW"]
+		"WwwwwwwA"]
 
     room[1] = [ "WwwwwGwW",
 		"WFFFFBFW",
 		"WFFFFFFW",
 		"WFPFFFFW",
 		"WFFFFFFW",
-		"WwwwwwwW"]
+		"WwwwwwwA"]
 
     room[2] = [ "WwwwwwwwwwwwwGwW",
 		"WFFFFFFFFFFFFFFW",
@@ -33,7 +34,7 @@ var room = [];
 		"WFFPFFFFFFFFFFFW",
 		"WFFFFFFFFFFFFFFW",
 		"WFFFFFFFFFFFFFFW",
-		"WwwwwwwwwwwwwwwW"]
+		"WwwwwwwwwwwwwwwA"]
 
     room[3] = [ "WwwwwwwwGwwwwwwW",
 		"WFFFFFFFFFFFFFFW",
@@ -46,7 +47,7 @@ var room = [];
 		"WBBBBBBBBBBBBBBW",
 		"WFFFFFFFFFFFFFFW",
 		"WFFPFFFFFFFFFFFW",
-		"WwwwwwwwwwwwwwwW"]
+		"WwwwwwwwwwwwwwwA"]
 
     room[4] = [ "WwwwwwwGwwwwwwwW",
 		"WBFBFBFBFBFBFBFW",
@@ -59,7 +60,7 @@ var room = [];
 		"WFBFBFBFBFBFBFBW",
 		"WBFBFBFBFBFBFBFW",
 		"WFPFFFFFFFFFFFFW",
-		"WwwwwwwwwwwwwwwW"]
+		"WwwwwwwwwwwwwwwA"]
 
     room[5] = [ "WwwwwwwwwwwwwGwW",
 		"WFFBFFFFFFFFFBFW",
@@ -70,9 +71,9 @@ var room = [];
 		"WFFWFWFWFWFWFWFW",
 		"WFFWFWFWFWFWFWFW",
 		"WFFWFWFWFWFWFWFW",
-		"WFFWFWFWFWFWFWFW",
-		"WFPBFFFFFFBFFFFW",
-		"WwwwwwwwwwwwwwwW"]
+		"WPFWFWFWFWFWFWFW",
+		"WFFBFFFFFFBFFFFW",
+		"WwwwwwwwwwwwwwwA"]
 
     room[6] = [ "WwwwwwwwwwwwwGwW",
 		"WFFBFBFBFBFBFBFW",
@@ -83,48 +84,48 @@ var room = [];
 		"WFFWFWFWFWFWFWFW",
 		"WFFWFWFWFWFWFWFW",
 		"WFFWFWFWFWFWFWFW",
-		"WFFWFWFWFWFWFWFW",
-		"WFPBFFFFFFBFFFFW",
-		"WwwwwwwwwwwwwwwW"]
+		"WFPWFWFWFWFWFWFW",
+		"WFFBFFFFFFBFFFFW",
+		"WwwwwwwwwwwwwwwA"]
 
     room[7] = [ "WwwwwwwwwwwwwGwW",
-		"WFFFFFFFFFFFFFFW",
-		"WFFFFFFFFFFFFFFW",
-		"WFFFFFFFFFFFFFFW",
-		"WFFFFFFFFFFFFFFW",
-		"WFFFFFFFFFFFFFFW",
-		"WFFFFFFFFFFFFFFW",
-		"WFFFFFFFFFFFFFFW",
+		"WFFFFFFFFBFFFBFW",
+		"WFFFFFFFBFBBBFBW",
+		"WFFFFFFBFBFBFBFW",
+		"WFFFFFBFBFBFBFFW",
+		"WFFFFBFBFBFBFBFW",
+		"WFFFBFBFBFBFBFBW",
+		"WFFBFBFBFBFBFBFW",
 		"WFFFFFFFFFFFFFFW",
 		"WFFFFFFFFFFFFFFW",
 		"WFPFFFFFFFFFFFFW",
-		"WwwwwwwwwwwwwwwW"]
+		"WwwwwwwwwwwwwwwA"]
 
     room[8] = [ "WwwwwwwGwwwwwwwW",
+		"WFPFFBFBFBFFFFFW",
+		"WFBFBFBFBFFFFFFW",
+		"WBFBFBFBFBFFFFFW",
+		"WFBFBBFFFBFFFFFW",
+		"WBFBFBFBFBFFFFFW",
+		"WFBFBBFFFBFFFFFW",
+		"WBFBFBBBBBFFFFFW",
 		"WFFFFFFFFFFFFFFW",
 		"WFFFFFFFFFFFFFFW",
 		"WFFFFFFFFFFFFFFW",
-		"WFFFFFFFFFFFFFFW",
-		"WFFFFFFFFFFFFFFW",
-		"WFFFFFFFFFFFFFFW",
-		"WFFFFFFFFFFFFFFW",
-		"WFFFFFFFFFFFFFFW",
-		"WFFFFFFFFFFFFFFW",
-		"WFPFFFFFFFFFFFFW",
-		"WwwwwwwwwwwwwwwW"]
+		"WwwwwwwwwwwwwwwA"]
 
     room[9] = [ "WwwwwwwGwwwwwwwW",
-		"WFFFFFFFFFFFFFFW",
-		"WFFFFFFFFFFFFFFW",
-		"WFFFFFFFFFFFFFFW",
-		"WFFFFFFFFFFFFFFW",
-		"WFFFFFFFFFFFFFFW",
+		"WFFFFBFBFBFFFFFW",
+		"WFFFBFBFBFBFFFFW",
+		"WBFBFBBBFBBFFFFW",
+		"WFBFBFFFBFBFBFBW",
+		"WBFBFBFBFBFBFBFW",
 		"WFFFFFFFFFFFFFFW",
 		"WFFFFFFFFFFFFFFW",
 		"WFFFFFFFFFFFFFFW",
 		"WFFFFFFFFFFFFFFW",
 		"WFPFFFFFFFFFFFFW",
-		"WwwwwwwwwwwwwwwW"]
+		"WwwwwwwwwwwwwwwA"]
 
     room[10] = ["WwwwwwwGwwwwwwwW",
 		"WFFFFFFFFFFFFFFW",
@@ -137,5 +138,5 @@ var room = [];
 		"WFFFFFFFFFFFFFFW",
 		"WFFFFFFFFFFFFFFW",
 		"WFPFFFFFFFFFFFFW",
-		"WwwwwwwwwwwwwwwW"]
+		"WwwwwwwwwwwwwwwA"]
 
