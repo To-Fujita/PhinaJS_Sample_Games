@@ -33,7 +33,7 @@ At the Step-4, try to display a walking animation for 4 directions by arrow keys
 At the Step-5, display tiles of walls and boxes. Then, to set the limit of walking at walls.  
 [index_Phina_05.html](https://to-fujita.github.io/PhinaJS_Sample_Games/index_Phina_05.html) : Demo for Step-5
 ### Step-6
-At the Step-6, to set pushing a box. It is finished the basic 2D based game sample.  
+At the Step-6, to set pushing a box. It is finished the basic 2D based game sample. If you try again same stage, please click the "A" tile.  
 [index_Phina_06.html](https://to-fujita.github.io/PhinaJS_Sample_Games/index_Phina_06.html) : Demo for Step-6
 ### Step-7
 In this step, try to create game for 2D type of maze with small chang of the sample in Step-6. The algorithm for making maze is based on [Algoful](http://algoful.com/Archive/Algorithm/MazeDig).  
