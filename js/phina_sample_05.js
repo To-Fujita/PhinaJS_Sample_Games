@@ -45,7 +45,7 @@ phina.define('TitleScene',{
     this.bg.origin.set(0, 0);
     this.bg.width = SCREEN_X;
     this.bg.height = SCREEN_Y;
-    var score_02 = 'ここで使用しているキャラクターの一部に「どらぴか」様\n URL: https://dorapika.wixsite.com/pikasgame \n作成の素材を使用しております。';
+    var score_02 = 'ここで使用しているグラフィックの一部に「どらぴか」様\n URL: https://dorapika.wixsite.com/pikasgame \n作成の素材を使用しております。';
     if(END_flag == "Again") {
 	counter = counter - 1;
         var score_01 = 'Again !';

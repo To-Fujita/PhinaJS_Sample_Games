@@ -53,7 +53,7 @@ phina.define('TitleScene',{
     this.bg.width = SCREEN_X;
     this.bg.height = SCREEN_Y;
     var score_01 = 'Goal !';
-    var score_02 = 'ここで使用している歩行グラフィックに\n「どらぴか https://dorapika.wixsite.com/pikasgame」様及び\n「ぴぽや http://blog.pipoya.net/」様作成の素材を使用しております。\nまた、サウンドの制作・著作は、「ACOUSTICA様　http://www.acoustica.com 」です。';
+    var score_02 = 'ここで使用しているグラフィックに\n「どらぴか https://dorapika.wixsite.com/pikasgame」様及び\n「ぴぽや http://blog.pipoya.net/」様作成の素材を　また、サウンドは\n「Taira Komori　https://taira-komori.jpn.org/ 」様作成の素材を使用しております。';
     var score_03 = 'Time is ' + counter + ' Sec. \n\n by T. Fujita';
 
     Label({
