@@ -33,22 +33,24 @@ At the Step-4, try to display a walking animation for 4 directions by arrow keys
 At the Step-5, display tiles of walls and boxes. Then, to set the limit of walking at walls.  
 [index_Phina_05.html](https://to-fujita.github.io/PhinaJS_Sample_Games/index_Phina_05.html) : Demo for Step-5
 ### Step-6
-At the Step-6, to set pushing a box. It is finished the basic 2D based game sample. If you try again same stage, please click the "A" tile.  
-[index_Phina_06.html](https://to-fujita.github.io/PhinaJS_Sample_Games/index_Phina_06.html) : Demo for Step-6
+At the Step-6, to set pushing a box. It is 2 type of 2D based game samples, that is without sound effect and with sound effect. If you try again same stage, please click the "A" tile.  
+[index_Phina_06.html](https://to-fujita.github.io/PhinaJS_Sample_Games/index_Phina_06.html) : Demo for Step-6 without sound effect  
+[index_Phina_06_with_sound_effect.html](https://to-fujita.github.io/PhinaJS_Sample_Games/index_Phina_06_with_sound_effect.html) : Demo for Step-6 with sound effect
 ### Step-7
 In this step, try to create game for 2D type of maze with small chang of the sample in Step-6. The algorithm for making maze is based on [Algoful](http://algoful.com/Archive/Algorithm/MazeDig).  
-[index_Phina_07.html](https://to-fujita.github.io/PhinaJS_Sample_Games/index_Phina_07.html) : Demo for Step-7
+[index_Phina_07.html](https://to-fujita.github.io/PhinaJS_Sample_Games/index_Phina_07_with_sound_effect.html) : Demo for Step-7
 ### Step-8
 At the Step-8, added some enemies to the sample in Step-6.  
-[index_Phina_08.html](https://to-fujita.github.io/PhinaJS_Sample_Games/index_Phina_08.html) : Demo for Step-8
+[index_Phina_08.html](https://to-fujita.github.io/PhinaJS_Sample_Games/index_Phina_08_with_sound_effect.html) : Demo for Step-8
 ### Step-9
 At the last step, some enemies are able to crush by Box.  
-[index_Phina_09.html](https://to-fujita.github.io/PhinaJS_Sample_Games/index_Phina_09.html) : Demo for Step-9
+[index_Phina_09.html](https://to-fujita.github.io/PhinaJS_Sample_Games/index_Phina_09_with_sound_effect.html) : Demo for Step-9
 ## Reference:
 1. [Phina js](https://phinajs.com/) : Home Page of Phina.js  
 2. [pikasgame](https://dorapika.wixsite.com/pikasgame) : Home Page of PIKA's GAME  
 3. [pipoya](http://blog.pipoya.net/) : Home Page of Pipoya  
 4. [Algoful](http://algoful.com/Archive/Algorithm/MazeDig) : Algorithm for making a maze  
+5. [ACOUSTICA](http://www.acoustica.com) : Home Page of ACOUSTICA  
 ## Licence:
 [MIT](https://github.com/tcnksm/tool/blob/master/LICENCE)
 ## Author:
