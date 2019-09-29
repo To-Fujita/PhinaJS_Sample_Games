@@ -14,7 +14,7 @@ The files are as follows:
 - js/phina.js, phina.min.js: The main body for phina.js.  
 - js/phina_sample_01.js - phina_sample_09_with_sound_effect.js: Each JavaScript file is corresponding to each HTML file.  
 - js/stage_01.js: Each stage without enemy is here. It is available to change by using text editor.  
-- js/stage_02.js: Each stage with enemy (after stage #7) is here. It is also available to change.  
+- js/stage_02.js: Each stage with enemy (after stage #8) is here. It is also available to change.  
 - sound: It is a folder for providing the sound files.  
 
 In these games, some graphics are downloaded from  [pikasgame](https://dorapika.wixsite.com/pikasgame) and [pipoya](http://blog.pipoya.net/). Then, files for sound effect are downloaded from [Let's Play with Free Sound Effects !](https://taira-komori.jpn.org/).  
