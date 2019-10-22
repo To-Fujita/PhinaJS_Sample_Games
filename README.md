@@ -6,7 +6,7 @@ This is one of tutrial for creating some games based on phina.js. In this docume
 I will show you same samples to create 2D based games of pazzle type step by step.  
 These demonstrations are confirmed by Microsoft Edge (Ver. 11.0.17763.379), Firefox (Ver. 65.0.2/64 bit) and Google Chrome (Ver. 73.0.3683.86/64 bit) under the condition of Windows 10. It is also supported to the touch events. Then, some Android and iOS are also available to work it.  
 [index.html](https://to-fujita.github.io/PhinaJS_Sample_Games/index.html) : Menu for Demo Games  
-At the GITHUB above, the files and folders are as follows:  
+At the GITHUB above, the files and the folders are as follows:  
 - index_Phina_01.html - index_Phina_09_with_sound_effect.html: Each html file is corresponding to each step below.  
 - images: It is a folder for providing the background image, tile images and character's graphics.  
 - js: It is a folder for main programs.  
