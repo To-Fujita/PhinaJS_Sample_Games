@@ -53,6 +53,6 @@ At the last step, some enemies are able to crush by Box.
 4. [Algoful](http://algoful.com/Archive/Algorithm/MazeDig) : Algorithm for making a maze  
 5. [Let's Play with Free Sound Effects !](https://taira-komori.jpn.org/) : Mr. Taira Komori's Home Page  
 ## Licence:
-[MIT](https://choosealicense.com/licenses/mit/)
+MIT
 ## Author:
 [T. Fujita](https://github.com/To-Fujita)
